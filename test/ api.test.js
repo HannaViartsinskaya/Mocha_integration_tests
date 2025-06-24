@@ -1,7 +1,6 @@
-const chai = require('chai');
-const expect = chai.expect;
-const supertest = require('supertest');
-const app = require('../src/app');
+import { expect } from 'chai';  // Use named import from chai
+import supertest from 'supertest';  // Correct way to import supertest
+import app from '../src/app.js';
 
 describe('GET /api/users', function() {
     it('should return a list of users', async function() {

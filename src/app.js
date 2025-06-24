@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 
 app.use(express.json());
@@ -25,4 +25,4 @@ app.post('/api/user', (req, res)=>{
     res.status(201).json(newUser);
 })
 
-module.exports = app;
+export default app;
